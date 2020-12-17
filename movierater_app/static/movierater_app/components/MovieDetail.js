@@ -118,7 +118,7 @@ class MovieDetail extends React.Component {
                     {
                         class: "col-md my-3 fw-bold"
                     },
-                    "User Review Rating"
+                    "Average User Review Rating"
                 ),
                 React.createElement(
                     "div",

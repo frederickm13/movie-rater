@@ -1,0 +1,13 @@
+{% extends "movierater_app/layout.html" %}
+{% load static %}
+
+{% block body %}
+<div id="app"></div>
+
+<!-- Load React -->
+<script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+
+<!-- Load App Scripts -->
+<script src="{% static 'movierater_app/app.js' %}" type="module"></script>
+{% endblock %}

@@ -17,10 +17,10 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    # Custom URL paths
-    path('/', include('movierater_app.urls')),
-    path('/', include('movierater_api.urls')),
-
     # OOB URL paths
     path('admin/', admin.site.urls),
+
+    # Custom URL paths
+    path('api/', include('movierater_api.urls')),
+    path('', include('movierater_app.urls')),
 ]
